@@ -4,7 +4,7 @@ import logo from '../../assets/logoShopSwift.png'
 import destaque1 from '../../assets/destaque1.png'
 import destaque2 from '../../assets/destaque2.png'
 import destaque3 from '../../assets/destaque3.png'
-import { CategorySection } from "../../components/categorySection"
+import { CategorySection } from "../../components/CategorySection"
 import { ProductsSection } from "../../components/ProductsSection"
 
 export const Home = () => {

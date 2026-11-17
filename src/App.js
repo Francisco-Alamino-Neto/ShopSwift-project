@@ -5,13 +5,11 @@ import { Card } from './components/Card';
 import { Login } from './screens/Login';
 import { Cadastro } from './screens/Cadastro';
 import { Home } from './screens/Home';
+import { Produtos } from './screens/Produtos';
+import { AppRouter } from './routes/Router';
 
 export default function App() {
   return (
-    <SafeAreaView>
-      {/* <Login/>      */}
-      {/* <Cadastro/> */}
-      <Home/>
-    </SafeAreaView>
+    <AppRouter/>
   );
 }

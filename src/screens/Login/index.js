@@ -1,8 +1,12 @@
 import { Image, Text, View, TextInput, Pressable } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 import { styles } from './style'
 import logo from '../../assets/logoShopSwift.png'
 
 export const Login = () => {
+
+    const navigation = useNavigation();
+
     return (
 
         <View style={styles.containerHome}>
@@ -26,7 +30,7 @@ export const Login = () => {
                         </View>
                     </View>
 
-                    <Pressable style={styles.buttonLogin}>
+                    <Pressable onPress={() => navigation.navigate('home')} style={styles.buttonLogin}>
                         <Text style={styles.txtLogin}>Entrar</Text>
                     </Pressable>
                 </View>
